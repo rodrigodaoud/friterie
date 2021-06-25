@@ -1,14 +1,14 @@
 import { gql } from '@apollo/client';
 
-export const HOMEPAGE = gql`
+export const HEADER = gql`
   query {
-    homepage(id: "3GxxstRvH0oOlAU6g7cnj2") {
+    header(id: "3aqcltEwaWvvyUwGE0dWw0") {
       title
     }
   }
 `;
 
-export interface HomepageData {
+export interface HeaderData {
   homepage: {
     title: string;
   }
