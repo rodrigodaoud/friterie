@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -12,8 +16,31 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@helpers/*": [ "./src/helpers/*"],
+      "@queries/*": ["./src/queries/*"],
+      "@type/*": ["./src/types/*"],
+      "@themes/*": ["./src/themes/*"],
+      "@atoms": ["./src/components/atoms/index"],
+      "@atoms/*": ["./src/components/atoms/*"],
+      "@molecules": ["./src/components/molecules/index"],
+      "@molecules/*": ["./src/components/molecules/*"],
+      "@organisms": ["./src/components/organisms/index"],
+      "@organisms/*": ["./src/components/organisms/*"],
+      "@templates": ["./src/components/templates/index"],
+      "@templates/*": ["./src/components/templates/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    ".eslintrc.js",
+    "*.config.js",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
