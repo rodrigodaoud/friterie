@@ -1,13 +1,36 @@
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'AcuminPro', sans-serif !important;
   padding: 0;
   margin: 0;
-  background-color: #f2f3f3;
+  background-color: #F4ECEB !important;
+}
+
+.carousel {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'GeneralGrotesque', sans-serif !important;
 }
 
 #__next {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+}
+
+@font-face {
+  font-family: "GeneralGrotesque";
+  src: url("/fonts/GeneralGrotesque/GeneralGrotesqueMono-XBold.ttf");
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AcuminPro";
+  src: url("/fonts/AcuminPro/Acumin-RPro.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }

@@ -10,7 +10,9 @@ const apolloClient = new ApolloClient({
   headers: {
     Authorization: `Bearer ${process.env.NEXT_PUBLIC_CONTENTFUL_API_KEY}`,
   },
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({
+    addTypename: false,
+  }),
 });
 
 export default apolloClient;
