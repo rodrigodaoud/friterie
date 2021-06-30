@@ -1,4 +1,4 @@
-import { Color } from '@type/globals';
+import { Color, HeadingLevel } from '@type/globals';
 import 'styled-components';
 
 declare module 'styled-components' {
