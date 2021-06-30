@@ -47,4 +47,7 @@ export const myTheme: DefaultTheme = {
     color: Color.WHITE,
     fontSize: FontSize.H1,
   },
+  paragraph: {
+    color: TextColor.DEFAULT,
+  },
 };

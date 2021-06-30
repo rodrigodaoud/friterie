@@ -20,6 +20,9 @@ declare module 'styled-components' {
     banner: {
       color: Color,
       fontSize: FontSize,
+    },
+    paragraph: {
+      color: TextColor,
     }
   }
 }
