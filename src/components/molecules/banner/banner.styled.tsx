@@ -14,6 +14,14 @@ export const StyledLabel = styled.div`
   text-transform: uppercase;
   width: 12rem;
   z-index: 2;
+
+  & a {
+
+    & h1:hover {
+      transition: color 0.3s ease;
+      color: ${({ theme }) => theme.banner.hoverColor};
+    }
+  }
 `;
 
 export const Opacity = styled.div`

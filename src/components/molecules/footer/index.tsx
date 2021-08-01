@@ -3,10 +3,10 @@ import { Image } from '@atoms/image';
 import { Row } from '@atoms/row';
 import { Logo, Wrapper } from '@molecules/header/header.styled';
 import { Props } from './types';
-import { TemplateContent, P } from './footer.styled';
+import { TemplateContent, P, StyledFooter } from './footer.styled';
 
 export const Footer: React.FC<Props> = ({ footerData }: Props) => (
-  <footer>
+  <StyledFooter>
     <Wrapper>
       <Row>
         <TemplateContent>
@@ -19,5 +19,5 @@ export const Footer: React.FC<Props> = ({ footerData }: Props) => (
         </Logo>
       </Row>
     </Wrapper>
-  </footer>
+  </StyledFooter>
 );

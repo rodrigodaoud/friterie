@@ -10,12 +10,12 @@ export const TemplateContent = styled.div<StyledProps>`
   display: grid;
   justify-content: center;
   text-align: center;
-  padding: 5rem 0;
+  padding: 3rem 0 6rem;
   grid-area: content;
   grid-template-columns: ${({ large }) => (large ? '100%' : '10rem')};
 
   ${media(BreakPoints.sm, css`
-    padding: 10rem 0;
+    padding: 8rem 0 12rem;
   `)}
 
   & h2 {

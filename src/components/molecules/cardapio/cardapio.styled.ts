@@ -1,7 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { media } from '@helpers/media';
+import { BreakPoints } from '@type/globals';
 
 export const TemplateContent = styled.section`
   grid-area: content;
+  padding: 2rem 1rem 6rem;
 
   & .accordion {
     display: flex;
@@ -36,6 +39,7 @@ export const ImageWrapper = styled.div`
 
 export const MenuWrapper = styled.div`
   display: flex;
+  margin: 0 0 2rem;
   gap: 2rem;
 `;
 
@@ -43,6 +47,10 @@ export const CollapseWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 0 1rem;
+
+  ${media(BreakPoints.xl, css`
+    flex-direction: row;
+  `)}
 `;
 
 export const InfoWrapper = styled.div`

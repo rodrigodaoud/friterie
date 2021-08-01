@@ -28,3 +28,5 @@ export const P = styled.p`
   margin: 0;
   width: 100%;
 `;
+
+export const StyledFooter = styled.footer``;

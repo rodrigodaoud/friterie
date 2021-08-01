@@ -48,6 +48,7 @@ export const myTheme: DefaultTheme = {
   },
   banner: {
     color: Color.WHITE,
+    hoverColor: Color.SECONDARY,
     fontSize: FontSize.H1,
   },
   cardapio: {

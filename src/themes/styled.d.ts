@@ -22,6 +22,7 @@ declare module 'styled-components' {
     },
     banner: {
       color: Color,
+      hoverColor: Color,
       fontSize: FontSize,
     },
     cardapio: {
