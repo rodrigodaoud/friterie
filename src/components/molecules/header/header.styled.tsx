@@ -15,6 +15,8 @@ export const TemplateContent = styled.div`
   gap: 1rem;
   margin: 0 0 0 auto;
   font-size: 0.75rem;
+  font-family: "GeneralGrotesque";
+  text-transform: uppercase;
   padding: 2rem 1rem;
   white-space: nowrap;
   text-align: right;
@@ -36,6 +38,18 @@ export const LinkSection = styled.section`
   justify-content: flex-end;
   gap: 1.5rem;
 
+  & a {
+    color: ${({ theme }) => theme.header.color};
+    outline: none;
+
+    &:hover {
+      text-decoration: none;
+      outline: none;
+      color: ${({ theme }) => theme.header.hover.color};
+      transition: color 0.2s ease;
+    }
+  }
+
   ${media(BreakPoints.sm, css`
     margin: 0 0 0 16rem;
   `)}
@@ -50,11 +64,30 @@ export const Logo = styled.div`
   top: 3rem;
   left: 1rem;
   width: 8rem;
-  z-index: 1;
+  z-index: 3;
+
+  &.footer {
+    display: none;
+  }
 
   ${media(BreakPoints.sm, css`
     top: 1.5rem;
     left: 10%;
     width: 10rem;
+  `)}
+
+  ${media(BreakPoints.lg, css`
+    &.footer {
+      display: initial;
+      left: auto;
+      right: 2rem;
+      top: -7rem;
+    }
+  `)}
+
+  ${media(BreakPoints.xl, css`
+    &.footer {
+      right: 6rem;
+    }
   `)}
 `;

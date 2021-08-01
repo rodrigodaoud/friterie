@@ -13,6 +13,8 @@ export const HOMEPAGE = gql`
       deliveryBanner {
         url
       }
+      informationTitle
+      informationSubtitle
     }
   }
 `;
@@ -34,4 +36,6 @@ export interface HomepageData {
   deliveryBanner: {
     url: string;
   }
+  informationTitle: string;
+  informationSubtitle: string;
 }

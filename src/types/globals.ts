@@ -10,6 +10,7 @@ export enum Color {
   PRIMARY = '#CE4C19',
   DEFAULT = '#44281C',
   SECONDARY = '#F0ACCB',
+  LIGHT = '#F4ECEB',
   WHITE = '#ffffff',
   TRANSPARENT = 'transparent',
 }
@@ -33,6 +34,7 @@ export enum FontSize {
   H3 = '1.375rem', // 22px
   H4 = '1.125rem', // 18px
   H5 = '1rem', // 16px
+  SMALL = '0.6875rem', // 11px
 }
 
 export enum FontWeight {
@@ -46,4 +48,5 @@ export enum TextColor {
   PRIMARY = Color.PRIMARY,
   SECONDARY = Color.SECONDARY,
   WHITE = Color.WHITE,
+  LIGHT = Color.LIGHT,
 }

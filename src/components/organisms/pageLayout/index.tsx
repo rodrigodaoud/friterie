@@ -1,14 +1,17 @@
 import React from 'react';
 import Head from 'next/head';
 import { Header } from '@molecules/header';
+import { Footer } from '@molecules/footer';
 import { useQuery } from '@apollo/client';
-import { HEADER, HeaderResponse } from '@queries/header';
+import { HEADER, HeaderData, HeaderResponse } from '@queries/header';
+import { FOOTER, FooterData, FooterResponse } from '@queries/footer';
 import { Props } from './types';
 
 export const PageLayout: React.FC<Props> = ({
   children,
 }: Props) => {
-  const { data } = useQuery<HeaderResponse>(HEADER);
+  const headerData = useQuery<HeaderResponse>(HEADER);
+  const footerData = useQuery<FooterResponse>(FOOTER);
 
   return (
     <>
@@ -17,10 +20,11 @@ export const PageLayout: React.FC<Props> = ({
           Friterie :: Site Oficial
         </title>
       </Head>
-      <Header data={data?.header} />
+      <Header headerData={headerData?.data?.header as HeaderData} />
       <main>
         {children}
       </main>
+      <Footer footerData={footerData?.data?.footer as FooterData} />
     </>
   );
 };

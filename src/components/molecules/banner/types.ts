@@ -1,6 +1,6 @@
 export interface Props {
   data: {
-    title: string;
-    image: string;
+    title: string | undefined;
+    image: string | undefined;
   }
 }

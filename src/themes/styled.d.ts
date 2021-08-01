@@ -6,6 +6,9 @@ declare module 'styled-components' {
     header: {
       backgroundColor: Color;
       color: Color;
+      hover: {
+        color: Color,
+      }
     },
     heading: {
       [HeadingLevel.H1]: Heading,
@@ -21,8 +24,26 @@ declare module 'styled-components' {
       color: Color,
       fontSize: FontSize,
     },
+    cardapio: {
+      infoTitle: {
+        fontSize: FontSize,
+        color: Color,
+      },
+    },
     paragraph: {
       color: TextColor,
+    },
+    centeredText: {
+      title: {
+        fontSize: FontSize,
+      },
+      subtitle: {
+        fontSize: FontSize,
+      },
+    },
+    footer: {
+      color: TextColor,
+      fontSize: FontSize,
     }
   }
 }

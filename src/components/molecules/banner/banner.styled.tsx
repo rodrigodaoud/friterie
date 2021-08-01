@@ -10,8 +10,9 @@ export const StyledLabel = styled.div`
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  text-align: center;
   text-transform: uppercase;
-  width: 10rem;
+  width: 12rem;
   z-index: 2;
 `;
 

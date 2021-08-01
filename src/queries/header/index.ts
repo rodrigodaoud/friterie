@@ -10,6 +10,8 @@ export const HEADER = gql`
       itemsCollection {
         items {
           title
+          to
+          externalLink
         }
       }
     }
@@ -23,6 +25,8 @@ export interface HeaderResponse {
 export interface HeaderItems {
   items: Array<{
     title: string;
+    to: string;
+    externalLink: boolean;
   }>
 }
 

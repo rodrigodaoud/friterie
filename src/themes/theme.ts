@@ -7,6 +7,9 @@ export const myTheme: DefaultTheme = {
   header: {
     backgroundColor: Color.DEFAULT,
     color: Color.PRIMARY,
+    hover: {
+      color: Color.SECONDARY,
+    },
   },
   heading: {
     [HeadingLevel.H1]: {
@@ -47,7 +50,25 @@ export const myTheme: DefaultTheme = {
     color: Color.WHITE,
     fontSize: FontSize.H1,
   },
+  cardapio: {
+    infoTitle: {
+      fontSize: FontSize.H1,
+      color: Color.DEFAULT,
+    },
+  },
   paragraph: {
     color: TextColor.DEFAULT,
+  },
+  centeredText: {
+    title: {
+      fontSize: FontSize.H1,
+    },
+    subtitle: {
+      fontSize: FontSize.H4,
+    },
+  },
+  footer: {
+    color: TextColor.LIGHT,
+    fontSize: FontSize.SMALL,
   },
 };
